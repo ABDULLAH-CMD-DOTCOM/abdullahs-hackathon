@@ -8,7 +8,11 @@ export const Hero = () => {
     <div className='bg-[#F6F7F9]  w-full'>
 <div className="bg-[#F6F7F9] w-full">
   <div className="flex flex-col sm:flex-row justify-center max-w-screen-xl mx-auto px-4">
+<<<<<<< HEAD
     <div className="bg-[#54A6FF] w-full sm:w-1/2 p-6 sm:p-8  mx-2rounded-md my-4 space-y-6">
+=======
+    <div className="bg-[#54A6FF] w-full sm:w-1/2 p-6 sm:p-8 mx-5 rounded-md my-4 space-y-6">
+>>>>>>> bfcb5294e318abcc34503cdfba92eaf3f8c2b4d5
       <h2 className="text-xl sm:text-3xl font-bold mb-4">The Best Platform for Car Rental</h2>
       <p className="text-base sm:text-lg mb-6">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
       <Link href="/payment">
@@ -109,6 +113,7 @@ export const Hero = () => {
       <p className="text-black font-normal mx-4 sm:mx-14">Time</p>
     </span>
 
+<<<<<<< HEAD
     <span className="flex flex-col sm:flex-row mx-4 sm:mx-14">
       <select className="text-[#90A3BF] font-normal mx-4 sm:mx-8 py-5 text-[12px]">
         <option value="">Select city ↓</option>
@@ -121,6 +126,16 @@ export const Hero = () => {
         type="date"
         className="text-[#90A3BF] h-10 font-normal mx-4 sm:mx-8 py-5 text-[12px]"
         placeholder="Select your date ↓"
+=======
+   
+    <div className='flex justify-center items-center mx-8'>
+      <Image
+        className=''
+        src={"/Switch.png"}
+        width={200}
+        height={200}
+        alt='switch'
+>>>>>>> bfcb5294e318abcc34503cdfba92eaf3f8c2b4d5
       />
       <p className="text-[#90A3BF] font-normal mx-4 sm:mx-8 py-5 text-[12px]">Select your time ↓</p>
     </span>
