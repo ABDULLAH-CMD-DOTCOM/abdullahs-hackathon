@@ -8,7 +8,7 @@ export const Hero = () => {
     <div className='bg-[#F6F7F9]  w-full'>
 <div className="bg-[#F6F7F9] w-full">
   <div className="flex flex-col sm:flex-row justify-center max-w-screen-xl mx-auto px-4">
-    <div className="bg-[#54A6FF] w-full sm:w-1/2 p-6 sm:p-8 rounded-md my-4 space-y-6">
+    <div className="bg-[#54A6FF] w-full sm:w-1/2 p-6 sm:p-8  mx-2rounded-md my-4 space-y-6">
       <h2 className="text-xl sm:text-3xl font-bold mb-4">The Best Platform for Car Rental</h2>
       <p className="text-base sm:text-lg mb-6">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
       <Link href="/payment">
@@ -27,8 +27,8 @@ export const Hero = () => {
       </div>
     </div>
 
-    <div className="bg-[#3563E9] w-full sm:w-1/2 p-6 sm:p-8  mx-5 rounded-md my-4 space-y-6">
-      <h2 className="text-xl sm:text-3xl font-bold mb-4">Easy way to rent a car at a low price</h2>
+    <div className="bg-[#3563E9] w-full sm:w-1/2 p-6 sm:p-8  mx-2 rounded-md my-4 space-y-6">
+      <h2 className="text-xl sm:text-3xl font-bold mb-4 my-3">Easy way to rent a car at a low price</h2>
       <p className="text-base sm:text-lg mb-6">Providing cheap car rental services and safe and comfortable facilities.</p>
       <Link href="/payment">
         <button className="bg-[#54A6FF] py-2 px-4 sm:py-3 sm:px-6 rounded-md text-white font-semibold text-lg hover:bg-[#2f53c3] transition duration-300 transform hover:scale-105">
@@ -49,77 +49,86 @@ export const Hero = () => {
 </div>
 
 
+<div className="flex flex-col sm:flex-row items-center justify-center py-24">
+  {/* Pick-up section */}
+  <div className="bg-white py-6 sm:py-16 mx-4 sm:mx-8 w-full sm:w-[582px]">
+    <Image
+      className="my-17 mx-auto sm:mx-10"
+      src="/mark-2.png"
+      width={16}
+      height={16}
+      alt="mark"
+    />
+    <p className="text-black mx-4 sm:mx-20 my-3 font-bold  text-center sm:text-left">Pick-upp</p>
+    <span className="flex mx-2 sm:flex-row sm:mx-14">
+      <p className="text-black font-normal mx-4 sm:mx-8">Locations</p>
+      <p className="text-black font-normal mx-4 sm:mx-8">Date</p>
+      <p className="text-black font-normal mx-4 sm:mx-14">Time</p>
+    </span>
 
-        <div className='flex justify-center py-24'>
-  <div className='flex justify-between items-center w-full max-w-screen-xl'>
-    <div className='bg-white py-28 mx-8 w-[582px] h-[136px]'>
-      <Image
-        className='-my-12 mx-10'
-        src={"/mark-1.png"}
-        width={16}
-        height={16}
-        alt='mark'
+    <span className="flex flex-col sm:flex-row mx-4 sm:mx-14">
+      <select className="text-[#90A3BF] font-normal mx-4 sm:mx-8 py-5 text-[12px]">
+        <option value="">Select city ↓</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabad">Islamabad</option>
+      </select>
+
+      <input
+        type="date"
+        className="text-[#90A3BF] h-10 font-normal mx-4 sm:mx-8 py-5 text-[12px]"
+        placeholder="Select your date ↓"
       />
-      <p className='text-black mx-20 my-7 font-bold'>Pick-up</p>
-      <span className='flex mx-14'>
-        <p className='text-black font-normal mx-8'>Locations</p>
-        <p className='text-black font-normal mx-8'>Date</p>
-        <p className='text-black font-normal mx-14'>Time</p>
-      </span>
+      <p className="text-[#90A3BF] font-normal mx-4 sm:mx-8 py-5 text-[12px]">Select your time ↓</p>
+    </span>
+  </div>
+  {/* Switch Icon */}
+  <div className="flex justify-center items-center mx-4 sm:mx-8">
+    <Image
+      className=""
+      src="/switch.png"
+      width={150}
+      height={150}
+      alt="switch"
+    />
+  </div>
 
-      <span className='flex mx-14 inline-block'>
-      <select  className='text-[#90A3BF] font-normal mx-8 py-5 text-[12px]'>
-            <option value="">Select city ↓</option>
-            <option value="Karchi">Karchi</option>
-            <option value="Lahore">Lahore</option>
-            <option value="Islamabad">Islamabad</option>
-        </select>
-     
-        <input type='date'  className='text-[#90A3BF] h-10 font-normal mx- py-10 text-[12px]' placeholder='Select your date ↓'/>
-        <p className='text-[#90A3BF] font-normal mx-4 py-5 text-[12px]'>Select your time ↓</p>
-      </span>
-    </div>
+  {/* Drop-off section */}
+  <div className="bg-white py-6 sm:py-16 mx-4 sm:mx-8 w-full sm:w-[582px]">
+    <Image
+      className="my-17 mx-auto sm:mx-10"
+      src="/mark-2.png"
+      width={16}
+      height={16}
+      alt="mark"
+    />
+    <p className="text-black mx-4 sm:mx-20 my-3 font-bold  text-center sm:text-left">Drop-off</p>
+    <span className="flex mx-2 sm:flex-row sm:mx-14">
+      <p className="text-black font-normal mx-4 sm:mx-8">Locations</p>
+      <p className="text-black font-normal mx-4 sm:mx-8">Date</p>
+      <p className="text-black font-normal mx-4 sm:mx-14">Time</p>
+    </span>
 
-   
-    <div className='flex justify-center items-center mx-8'>
-      <Image
-        className=''
-        src={"/switch.png"}
-        width={200}
-        height={200}
-        alt='switch'
+    <span className="flex flex-col sm:flex-row mx-4 sm:mx-14">
+      <select className="text-[#90A3BF] font-normal mx-4 sm:mx-8 py-5 text-[12px]">
+        <option value="">Select city ↓</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabad">Islamabad</option>
+      </select>
+
+      <input
+        type="date"
+        className="text-[#90A3BF] h-10 font-normal mx-4 sm:mx-8 py-5 text-[12px]"
+        placeholder="Select your date ↓"
       />
-    </div>
-
-    <div className='bg-white py-28 mx-8 w-[582px] h-[136px]'>
-      <Image
-        className='-my-12 mx-10'
-        src={"/mark-2.png"}
-        width={16}
-        height={16}
-        alt='mark'
-      />
-      <p className='text-black mx-20 my-7 font-bold'>Drop-off-up</p>
-      <span className='flex mx-14'>
-        <p className='text-black font-normal mx-8'>Locations</p>
-        <p className='text-black font-normal mx-8'>Date</p>
-        <p className='text-black font-normal mx-14'>Time</p>
-      </span>
-
-      <span className='flex mx-14 inline-block'>
-      <select className='text-[#90A3BF] font-normal mx-8 py-5 text-[12px]'>
-            <option value="">Select city ↓</option>
-            <option value="Karchi">Karchi</option>
-            <option value="Lahore">Lahore</option>
-            <option value="Islamabad">Islamabad</option>
-        </select>
-     
-        <input type='date'  className='text-[#90A3BF] h-10 font-normal mx- py-10 text-[12px]' placeholder='Select your date ↓'/>
-        <p className='text-[#90A3BF] font-normal mx-4 py-5 text-[12px]'>Select your time ↓</p>
-      </span>
-    </div>
+      <p className="text-[#90A3BF] font-normal mx-4 sm:mx-8 py-5 text-[12px]">Select your time ↓</p>
+    </span>
   </div>
 </div>
+
+
+
 <div className=' mx-40'>
 <p className=' mx-[70px] font-bold text-[#90A3BF]'>Popular Cars</p>
 
