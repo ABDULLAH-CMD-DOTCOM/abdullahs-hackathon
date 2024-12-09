@@ -8,7 +8,7 @@ export const Hero = () => {
     <div className='bg-[#F6F7F9]  w-full'>
 <div className="bg-[#F6F7F9] w-full">
   <div className="flex flex-col sm:flex-row justify-center max-w-screen-xl mx-auto px-4">
-    <div className="bg-[#54A6FF] w-full sm:w-1/2 p-6 sm:p-8 rounded-md my-4 space-y-6">
+    <div className="bg-[#54A6FF] w-full sm:w-1/2 p-6 sm:p-8 mx-5 rounded-md my-4 space-y-6">
       <h2 className="text-xl sm:text-3xl font-bold mb-4">The Best Platform for Car Rental</h2>
       <p className="text-base sm:text-lg mb-6">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
       <Link href="/payment">
