@@ -84,7 +84,7 @@ export const Hero = () => {
     <div className='flex justify-center items-center mx-8'>
       <Image
         className=''
-        src={"/switch.png"}
+        src={"/Switch.png"}
         width={200}
         height={200}
         alt='switch'
