@@ -6,43 +6,48 @@ export const Hero = () => {
   return (
         
     <div className='bg-[#F6F7F9]  w-full'>
-   <div className='flex flex-col sm:flex-row justify-center'>
-  <div className='bg-[#54A6FF] w-full sm:w-[720px] h-[360px] my-7 mx-4 sm:mx-[28px] rounded-md'>
-    <p className='text-3xl font-bold leading-10 mx-8 my-5'>The Best Platform <br /> for Car Rental</p>
-    <p className='mx-8 my-5'>Ease of doing a car rental safely and <br /> reliably. Of course at a low price.</p>
-    <Link href="/payment">
-      <button className="bg-[#2f53c3] py-3 px-6 ml-4 mr-6 my-4 rounded-md text-white font-semibold text-lg hover:bg-blue-800 transition duration-300 transform hover:scale-105">
-        Rent Now
-      </button>
-    </Link>
+<div className="bg-[#F6F7F9] w-full">
+  <div className="flex flex-col sm:flex-row justify-center max-w-screen-xl mx-auto px-4">
+    <div className="bg-[#54A6FF] w-full sm:w-1/2 p-6 sm:p-8 rounded-md my-4 space-y-6">
+      <h2 className="text-xl sm:text-3xl font-bold mb-4">The Best Platform for Car Rental</h2>
+      <p className="text-base sm:text-lg mb-6">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+      <Link href="/payment">
+        <button className="bg-[#2f53c3] py-2 px-4 sm:py-3 sm:px-6 rounded-md text-white font-semibold text-lg hover:bg-blue-800 transition duration-300 transform hover:scale-105">
+          Rent Now
+        </button>
+      </Link>
+      <div className="mt-6">
+        <Image
+          src="/img-1.png"
+          width={406}
+          height={116}
+          alt="car-1"
+          className="mx-auto"
+        />
+      </div>
+    </div>
 
-    <Image
-      className='mx-auto sm:mx-36 -my-8'
-      src={"/img-1.png"}
-      width={406}
-      height={116}
-      alt='car-1'
-    />
-  </div>
-
-  <div className='bg-[#3563E9] w-full sm:w-[720px] h-[360px] my-7 rounded-md mx-4 sm:mx-[28px]'>
-    <p className='text-3xl font-bold leading-10 mx-8 my-5'>Easy way to rent a <br /> car at a low price</p>
-    <p className='mx-8 my-5'>Providing cheap car rental services <br /> and safe and comfortable facilities.</p>
-    <Link href="/payment">
-      <button className="bg-[#54A6FF] py-3 px-6 ml-4 mr-6 my-4 rounded-md text-white font-semibold text-lg hover:bg-[#2f53c3] transition duration-300 transform hover:scale-105">
-        Rent Now
-      </button>
-    </Link>
-
-    <Image
-      className='mx-auto sm:mx-40 -my-8'
-      src={"/img-2.png"}
-      width={340}
-      height={108}
-      alt='car-2'
-    />
+    <div className="bg-[#3563E9] w-full sm:w-1/2 p-6 sm:p-8  mx-5 rounded-md my-4 space-y-6">
+      <h2 className="text-xl sm:text-3xl font-bold mb-4">Easy way to rent a car at a low price</h2>
+      <p className="text-base sm:text-lg mb-6">Providing cheap car rental services and safe and comfortable facilities.</p>
+      <Link href="/payment">
+        <button className="bg-[#54A6FF] py-2 px-4 sm:py-3 sm:px-6 rounded-md text-white font-semibold text-lg hover:bg-[#2f53c3] transition duration-300 transform hover:scale-105">
+          Rent Now
+        </button>
+      </Link>
+      <div className="mt-6">
+        <Image
+          src="/img-2.png"
+          width={340}
+          height={108}
+          alt="car-2"
+          className="mx-auto"
+        />
+      </div>
+    </div>
   </div>
 </div>
+
 
 
         <div className='flex justify-center py-24'>
@@ -63,7 +68,7 @@ export const Hero = () => {
       </span>
 
       <span className='flex mx-14 inline-block'>
-      <select className='text-[#90A3BF] font-normal mx-8 py-5 text-[12px]'>
+      <select  className='text-[#90A3BF] font-normal mx-8 py-5 text-[12px]'>
             <option value="">Select city ↓</option>
             <option value="Karchi">Karchi</option>
             <option value="Lahore">Lahore</option>
